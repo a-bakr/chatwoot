@@ -1,5 +1,5 @@
 {
-  "name": "Chatwoot Development Codespace",
+  "name": "Makkook Development Codespace",
   "service": "app",
   "dockerComposeFile": "docker-compose.yml",
 
@@ -32,7 +32,7 @@
   // 5432 postgres
   // 6379 redis
   // 1025,8025 mailhog
-  "forwardPorts": [8025, 3000, 3036],
+  "forwardPorts": [ 8025, 3000, 3036 ],
 
   "postCreateCommand": ".devcontainer/scripts/setup.sh && POSTGRES_STATEMENT_TIMEOUT=600s bundle exec rake db:chatwoot_prepare && pnpm install",
   "portsAttributes": {
